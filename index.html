@@ -20,6 +20,32 @@
                     }
                 }
             });
+     
+              function deviceChangedFunction()
+         {
+            if(window.innerWidth <= 480)
+            {
+                document.getElementById("mobile-experience").scrollIntoView();
+                console.log('was clicked device')
+            }
+             else
+            {
+                document.getElementById("WExp").scrollIntoView();
+            }
+         }
+         
+         function deviceChangedFunctionEducation()
+         {
+             if(window.innerWidth <= 480) 
+                 {
+                     document.getElementById("mobile-education").scrollIntoView();
+                 }
+             else
+                 {
+                     document.getElementById("Edu").scrollIntoView();
+                 }
+         }
+         
      </script>
      
      <link rel="stylesheet" media="screen and (min-device-width: 800px)" href="styling2.css" />
@@ -123,10 +149,10 @@
                             <a class="nav-link"  href="#courses">Courses</a>
                           </li> 
                           <li class="nav-item">
-                            <a class="nav-link"  href="#WExp">Experience</a>
+                            <a class="nav-link"  onclick="deviceChangedFunction()>Experience</a>
                           </li>
                              <li class="nav-item">
-                            <a class="nav-link"  href="#Edu">Education</a>
+                            <a class="nav-link"  onclick="deviceChangedFunctionEducation()">Education</a>
                           </li> 
                         </ul>
                       </div> 
