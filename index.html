@@ -8,7 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script>            
+     <script>            
             jQuery('html').bind('click', function(e) {
                
                 if(jQuery(e.target).closest('.navbar').length == 0) {
@@ -20,13 +20,13 @@
                     }
                 }
             });
-     
-              function deviceChangedFunction()
+         
+         function deviceChangedFunction()
          {
             if(window.innerWidth <= 480)
             {
                 document.getElementById("mobile-experience").scrollIntoView();
-                console.log('was clicked device')
+                console.log('was clicked device');
             }
              else
             {
@@ -57,7 +57,7 @@
          @media(max-width:900px) {
              #part1 {display:none;}
              #part2 {width:100%;}
-             #forMobile{display: block;}
+             /*#forMobile{display: block;}*/
              
             }
             /* Smartphone Portrait and Landscape */ 
@@ -66,20 +66,19 @@
             and (max-device-width : 480px){ 
                 #forMobile{display: block;}
                 #part1{display: none;}
+                #heroblock{display: none;}
                 #WExp{display:none;}
                 #Edu{display:none;}
                 #mobile-experience{display: block;}
                 #mobile-education{display: block;}
-              #bodyId{
+                #bodyId{
                    background-image: linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)), url("cs_1.jpg");}
-            }
-         
             }
          
      </style>
 </head>
-
-    <body id= "bodyId">
+     
+    
         <div class="modal fade" id="myModal">
                           <div class="modal-dialog modal-sm">
                             <div class="modal-content">
@@ -101,35 +100,58 @@
                             </div>
                           </div>
                         </div>
-              
+          <body id= "bodyId">    
             <div class= "pagelayout" id = "mainblock">
+                
+                    <div class="hero-image" id="heroblock">
+                          <div class="hero-text">
+                            <h1 style="font-size:50px">I am Devashree Jadhav..</h1>
+                            <p>And I'm a Developer!</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                         Contact Me
+                        </button>
+                          </div>
+                        </div>
                
             <div class = "pagelayout" id="part1">
                  <!-- The Modal -->
                         
-                <br><br><br>
+                <br><br>
                 <img src="IMG_20160919_130759639.jpg" class="rounded-circle" style="width:250px;height:250px;" >                
                 <h3><em>Devashree Jadhav</em></h3><h6><em>Computer Science Graduate Student <br>at Syracuse University</em></h6><br>
                   <div class="concluding">               
                       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
                          Contact details
                         </button>  
+                      <br><br>
+                       <div class="container"><strong> A Disney Story</strong>
+                            <p style="text-align: justify; font-size: 15px;">Walt Disney was born on December 5, 1901 in Chicago Illinois, to his father Elias Disney, and mother Flora Call Disney. Walt was one of five children, four boys and a girl.
+                            After Walt’s birth, the Disney family moved to Marceline Missouri, Walt lived most of his childhood here.Walt had very early interests in art, he would often sell drawings to neighbors to make extra money. He pursued his art career, by studying art and photography by going to McKinley High School in Chicago.Walt began to love, and appreciate nature and wildlife, and family and community, which were a large part of agrarian living. Though his father could be quite stern, and often there was little money, Walt was encouraged by his mother, and older brother, Roy to pursue his talents.During the fall of 1918, Disney attempted to enlist for military service. Rejected because he was under age, only sixteen years old at the time. Instead, Walt joined the Red Cross and was sent overseas to France, where he spent a year driving an ambulance and chauffeuring Red Cross officials. His ambulance was covered from stem to stern, not with stock camouflage, but with Disney cartoons.Once Walt returned from France, he began to pursue a career in commercial art. He started a small company called Laugh-O-Grams, which eventually fell bankrupt. With his suitcase, and twenty dollars, Walt headed to Hollywood to start anew.
+                            After making a success of his “Alice Comedies,” Walt became a recognized Hollywood figure.
+                            In 1932, the production entitled Flowers and Trees(the first color cartoon) won Walt the first of his studio’s Academy Awards. In 1937, he released The Old Mill, the first short subject to utilize the multi-plane camera technique.On December 21, 1937, Snow White and the Seven Dwarfs, the first full-length animated musical feature, premiered at the Carthay Theater in Los Angeles. The film produced at the unheard cost of $1,499,000 during the depths of the Depression, the film is still considered one of the great feats and imperishable monuments of the motion picture industry. During the next five years, Walt Disney Studios completed other full-length animated classics such as Pinocchio, Fantasia, Dumbo, and Bambi.Walt Disney’s dream of a clean, and organized amusement park, came true, as Disneyland Park opened in 1955. Walt also became a television pioneer, Disney began television production in 1954, and was among the first to present full-color programming with his Wonderful World of Color in 1961. Walt Disney is a legend; a folk hero of the 20th century. By 62–years–of–age, Walt had won 31 Academy Awards.One of his most famous quotes that will always keep generations inspired paraphrases his entire life: 
+                                <em>If you dream it, you can do it !</em><br>
+                            <b>And it is my dream to work for an inspiring organisation, I can do it with yor help !</b>
+
+                            </p>
+                        </div>
                     </div>
             </div>
                 
             <div class = "pagelayout" id="part2">
-                <div id="forMobile"  style="background-color:aliceblue;">
+             <div id="forMobile" style="background-image: url(cs_1.jpg)">
                     <div class="container" style="text-align: center;">
                         <br><br><br>
                        <!--<img src="IMG_20160919_130759639.jpg" class="rounded-circle float-right" style="width:200px;height:200px;" >-->
-                        <h3><em>Devashree Jadhav</em></h3><br>
-                        <h6><em>Computer Science Graduate Student <br>at Syracuse University</em></h6><br>
+                       <h3 style="color: white;"><em>Devashree Jadhav</em></h3><br>
+                        <h6 style="color: white;"><em>Computer Science Graduate Student <br>at Syracuse University</em></h6><br>
                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-                         Contact details
+                         Contact Me
                         </button><br><br>
+                       
+                        
                     </div>
                 </div>
-                <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">                      
+               <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">                      
 
                       <!-- Toggler/collapsibe Button -->
                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -156,8 +178,9 @@
                           </li> 
                         </ul>
                       </div> 
-                    </nav>  
-                <br><br>
+                    </nav> 
+                <br>
+                
               <h1 id="skillset" style="text-align: center;">Skills</h1>
                 <div class="skills" >         
                     <div class="container">
@@ -168,7 +191,7 @@
                     </div>
                     </div>
                 <div  id="WExp">
-                     <h1 id="WE">Work Experience</h1>
+                     <h1 id="WE" style="text-align: center;">Work Experience</h1>
                     <div class="skills">
                  <div>   
                      <img src="mindstix_logo.png" id="image" style="width:200px;height:200px;float:left;"><br>
@@ -213,6 +236,7 @@
                          Utilized knowledge of SQL for managing databases
                          Designed websites using C#, ASP.Net according to technical specifications.
                          Maintained and updated software specification documents.
+                        
                          Worked in a ‘request’ based environment where updates were made to the project according to client specifications.<br></p>
                             </div>  
                         </div>               
@@ -235,7 +259,7 @@
                 </div>  
                 
                 <div id="Edu">
-                    <h1 id="Ed">Education</h1>
+                    <h1 id="Ed" style="text-align: center;">Education</h1>
                     <div class="skills">
                  <div >
                      <img src="su_logo5.png" id="image" style="width:270px;height:200px;float:left;">
@@ -301,6 +325,10 @@
         </div>
     </body>
 </html>
+
+
+    
+   
 
 
     
