@@ -38,7 +38,7 @@ img
 }
 #part2 h1
 {
-    font-size: 25px;
+   /* font-size: 25px;*/
     font-style: italic;
 }
 #part2 strong
@@ -86,7 +86,7 @@ a.concluding
     height: 100%;
   /*  z-index: 1;*/
     opacity: 0.1;
-    background-image: url('cs_1.jpg');
+    background-image: url('codeHeroImage.jpg');
     background-repeat: no-repeat;
     background-position: 50% 0;
     -ms-background-size: cover;
@@ -149,7 +149,6 @@ a:hover
 }
 
 
-
 .hero-image {
   background-image: url("codeHeroImage.jpg");
   height: 100%;
@@ -161,7 +160,7 @@ a:hover
 
 .hero-text {
   text-align: center;
-  position: absolute;
+  position: absolute; 
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -174,7 +173,8 @@ a:hover
   display: inline-block;
   padding: 10px 25px;
   color: black;
-  background-color: #ddd;
+  /*background-color: #ddd;*/
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   text-align: center;
   cursor: pointer;
 }
