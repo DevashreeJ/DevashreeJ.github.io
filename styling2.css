@@ -86,7 +86,7 @@ a.concluding
     height: 100%;
   /*  z-index: 1;*/
     opacity: 0.1;
-     background-image: linear-gradient(rgba(255,255,255,0.65),rgba(255,255,255,0.65)), url('codeHeroImage.jpg');
+ background-image: url('codeHeroImage.jpg');
     background-repeat: no-repeat;
     background-position: 50% 0;
     -ms-background-size: cover;
@@ -150,7 +150,7 @@ a:hover
 
 
 .hero-image {
-  background-image: url("codeHeroImage.jpg");
+   background-image: linear-gradient(rgba(255,255,255,0.65),rgba(255,255,255,0.65)), url('codeHeroImage.jpg');
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
