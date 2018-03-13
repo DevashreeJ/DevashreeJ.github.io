@@ -46,6 +46,14 @@
                  }
          }
          
+        $(document).on('click', 'a[href^="#"]', function (event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+              scrollTop: $($.attr(this, 'href')).offset().top
+             }, 500);
+        });
+         
      </script>
      
      <link rel="stylesheet" media="screen and (min-device-width: 800px)" href="styling2.css" />
@@ -81,7 +89,7 @@
      
     
         <div class="modal fade" id="myModal">
-                          <div class="modal-dialog modal-sm">
+                          <div class="modal-dialog">
                             <div class="modal-content">
 
                               <!-- Modal Header -->
@@ -104,10 +112,10 @@
           <body id= "bodyId">    
             <div class= "pagelayout" id = "mainblock">
                 
-                    <div class="hero-image" id="heroblock">
+                    <div class="hero-image" id="heroblock">           
                           <div class="hero-text">
-                            <h1 style="font-size:50px">I am Devashree Jadhav..</h1>
-                            <p>And I'm a Developer!</p>
+                            <h1 style="font-size:50px">DEVASHREE JADHAV..</h1>
+                            <p>I'm a Developer!</p>
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
                          Contact Me
                         </button>
@@ -119,10 +127,10 @@
                         
                 <br><br>
                 <img src="IMG_20160919_130759639.jpg" class="rounded-circle" style="width:250px;height:250px;" >                
-                <h3><em>Devashree Jadhav</em></h3><h6><em>Computer Science Graduate Student <br>at Syracuse University</em></h6><br>
+                <h3 style= "font-family:impact;">Devashree Jadhav</h3><h6 style= "font-family:impact;">Computer Science Graduate Student <br>at Syracuse University</h6><br>
                   <div class="concluding">               
-                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-                         Contact details
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="font-family: impact;">
+                          <font color="black"> Contact details</font>
                         </button>  
                       
                        <div class="container" style="margin-top: 3cm;"><strong> A Disney Story</strong>
@@ -182,10 +190,10 @@
                 <div class="skills" style="text-align: justify;" >         
                     <div class="container">
                         <br><br>
-                        <h6><strong>Technologies and Frameworks:</strong></h6> JAVA, C++, C#, HTML, CSS, JavaScript,Angular2, ASP.Net, Python, jQuery, Rest API, JSON, XML, Bootstrap 4, Objective C, Swift 4, ADO.Net <br><br>
-                        <h6><strong>Tools and IDEs:</strong></h6>Visual Studio 2015/2017, Brackets, Android Studio, Xcode 9.2, Eclipse IDE, Selenium Web driver,JIRA,Appium,<br><br>
-                        <h6><strong>Version Control systems:</strong></h6> Git, Github, TFS <br><br>
-                        <h6><strong>Relational Database Management Systems :</strong></h6> MSSQL Server, MySQL, Oracle Database<br><br>
+                        <h6><strong>Technologies and Frameworks:</strong></h6> JAVA, C++, C#, HTML, CSS, JavaScript,Angular2, ASP.Net, Python, jQuery, Rest API, JSON, XML, Bootstrap 4, Objective C, Swift 4, ADO.Net,Ruby on Rails <br><br>
+                        <h6><strong>Tools and IDEs:</strong></h6>Visual Studio 2015/2017, Brackets, Android Studio, Xcode 9.2, Eclipse IDE, Selenium Web driver, JIRA, Appium,<br><br>
+                        <h6><strong>Version Control systems:</strong></h6> Git,TFS <br><br>
+                        <h6><strong>Relational Database Management Systems :</strong></h6> MSSQL Server, MySQL, Oracle Database, PostgreSQL, SQLite<br><br>
                         <br><br>
                     </div>
                     </div>
@@ -223,7 +231,7 @@
                      <div><strong>Infosys Ltd. [Pune, India]</strong>
                         <br><em> System Engineer | July 2014 – November 2015</em> <br><br>
                     <p>
-                        Designed a customer friendly application for the client using HTML5, CSS3, JQuery and AngularJS. Improved co-ordination within the team by discussing the front end and backend implementation.Upgraded the performance by refining the code and thorough unit testing.Enhanced the feature based on QA suggestion and advice.Used Git for version control and tracking changes in the Project to ensure efficiency in integration process.<br></p>
+                        Designed a customer friendly application for the client using HTML5, CSS3, JQuery. Improved co-ordination within the team by discussing the front end and backend implementation.Upgraded the performance by refining the code and thorough unit testing.Enhanced the feature based on QA suggestion and advice.Used Git for version control and tracking changes in the Project to ensure efficiency in integration process.<br></p>
                             </div>  
                         </div>               
                  
@@ -302,27 +310,25 @@
                 <h1 id="projects" style="text-align: center;">Projects</h1>
                 <div class="projects skills">
                     <div class="container">
+                        
+                <strong>Error logger of application - Website</strong><br>
+                Created a website using Asp.Net MVC framework and associated the same with a database using Entity framework. This Website displays the logged errors to user owning the application. The Website is created for user and Admin ends. Designed rest service to store data coming from the applications and then pushed the data from rest service into a Database.<br><br>               
               
-                <strong>Adaptive Clustering Methodology for Evolving Data Streams</strong><br>	
-                This project is being implemented to ensure efficient Clustering of Continuous and Massive Data Streams. It included performing clustering on electrical datasets of various zones of areas over 10 years, used the clustered datasets for analyzing the trend of usage of electricity in various times of the year, and used the datasets for analyzing the trend of usage of electricity in the given zones.<br><br>
-
-                <strong>Banking Application</strong><br> 					
-                This project was implemented in C++ and database was managed in file systems. It had two parts in accessibility from admin end and from user end providing all the basic functionalities.<br><br>
-
+                             
                 <strong>Code Analyzer</strong><br>
                 Created a type table of specific tokens using a code analyzer and implemented a dependency table mapping the various files depending on each other using this type table. The code analyzer would be executed on various folders of .cpp and .h files to extract method names to show dependencies using C++.<br><br>
 
                 <strong>Code Publisher</strong><br>
                 Published code on the browser through HTML files. The copying of content from source (.cpp or .h) file to HTML file was performed through code. This project also gives the user the flexibility of collapsing code in various scopes. This project used the integration of CSS, JavaScript and HTML with C++.<br><br>
-
-                <strong>Error logger of Websites</strong><br>
-                Created a website using Asp.Net MVC framework and associated the same with a database using Entity framework. This Website displays the logged errors to user owning the application. The Website is created for user and Admin ends. Designed rest service to store data coming from the applications and then pushed the data from rest service into a Database.<br><br>   </div>             
-              </div>
+                
+                <strong>Help on the Go -  Android application</strong><br>
+                Created an android application which used google maps API, Firebase by google and animations to enhance the look and feel. This application provided the details of the people who are willing to provide service during an emergency. User can call the person and view his location in the map. Based on the location, the user can decide whom to call. This application had two kinds of accounts; user account and service provider account who can view each other ont the application. The service provider is notified when the user requests for their assistance.<br>
+                        
+                        </div> 
+                
+                </div>
+         
         </div>
         </div>
     </body>
 </html>
-
-
-    
-   
