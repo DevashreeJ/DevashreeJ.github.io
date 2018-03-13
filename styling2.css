@@ -23,6 +23,15 @@ img
     text-align: center;
     height: 100%;
 }
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    top: 500px;
+    min-width: 100%; 
+    min-height: 100%;
+    object-fit: cover;
+}
 .col
 {
     margin: 0cm;
@@ -39,12 +48,13 @@ img
 #part2 h1
 {
    /* font-size: 25px;*/
-    font-style: italic;
+     font-family:impact;
 }
-#part2 strong
+/*#part2 strong
 {
-     font-style: italic;
-}
+    font-family:impact;
+    /* font-style: italic;*/
+}*/
 #mainblock
 {  
     width:100%;
@@ -86,7 +96,7 @@ a.concluding
     height: 100%;
   /*  z-index: 1;*/
     opacity: 0.1;
- background-image: url('codeHeroImage.jpg');
+    background-image: url('codeHeroImage.jpg');
     background-repeat: no-repeat;
     background-position: 50% 0;
     -ms-background-size: cover;
@@ -150,13 +160,16 @@ a:hover
 
 
 .hero-image {
-   background-image: linear-gradient(rgba(255,255,255,0.65),rgba(255,255,255,0.65)), url('codeHeroImage.jpg');
+ /* background-image: url("codeHeroImage.jpg");*/
+   /* background-image: url("hero_image2.png");*/
+    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url('codeHeroImage.jpg');
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
+  
 
 .hero-text {
   text-align: center;
