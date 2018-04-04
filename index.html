@@ -9,53 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-     <script>            
-            jQuery('html').bind('click', function(e) {
-               
-                if(jQuery(e.target).closest('.navbar').length == 0) {
-                    // click happened outside of .navbar, so hide
-                    var opened = jQuery('.navbar-collapse').hasClass('navbar-collapse');
-                    if ( opened === true ) {
-                        jQuery('.navbar-collapse').collapse('hide');
-                         console.log ('was clicked');
-                    }
-                }
-            });
-         
-         function deviceChangedFunction()
-         {
-            if(window.innerWidth <= 480)
-            {
-                document.getElementById("mobile-experience").scrollIntoView();
-                console.log('was clicked device');
-            }
-             else
-            {
-                document.getElementById("WExp").scrollIntoView();
-            }
-         }
-         
-         function deviceChangedFunctionEducation()
-         {
-             if(window.innerWidth <= 480) 
-                 {
-                     document.getElementById("mobile-education").scrollIntoView();
-                 }
-             else
-                 {
-                     document.getElementById("Edu").scrollIntoView();
-                 }
-         }
-         
-        $(document).on('click', 'a[href^="#"]', function (event) {
-            event.preventDefault();
-
-            $('html, body').animate({
-              scrollTop: $($.attr(this, 'href')).offset().top
-             }, 500);
-        });
-         
-     </script>
+   
      
      <style type="text/css"> 
             #forMobile {display: none;}
@@ -136,6 +90,7 @@
                         </button> --> 
                       
                        <div class="container" style="margin-top: 2cm;"><strong> A Disney Story</strong>
+                           <br><br>
                             <p style="text-align: justify; font-size: 14px; font-style: italic;">Walt Disney was born on December 5, 1901 in Chicago Illinois, to his father Elias Disney, and mother Flora Call Disney. Walt was one of five children, four boys and a girl.
                             After Walt’s birth, the Disney family moved to Marceline Missouri, Walt lived most of his childhood here.Walt had very early interests in art, he would often sell drawings to neighbors to make extra money. He pursued his art career, by studying art and photography by going to McKinley High School in Chicago.Walt began to love, and appreciate nature and wildlife, and family and community, which were a large part of agrarian living. Though his father could be quite stern, and often there was little money, Walt was encouraged by his mother, and older brother, Roy to pursue his talents.During the fall of 1918, Disney attempted to enlist for military service. Rejected because he was under age, only sixteen years old at the time. Instead, Walt joined the Red Cross and was sent overseas to France, where he spent a year driving an ambulance and chauffeuring Red Cross officials. His ambulance was covered from stem to stern, not with stock camouflage, but with Disney cartoons.Once Walt returned from France, he began to pursue a career in commercial art. He started a small company called Laugh-O-Grams, which eventually fell bankrupt. With his suitcase, and twenty dollars, Walt headed to Hollywood to start anew.
                             After making a success of his “Alice Comedies,” Walt became a recognized Hollywood figure.
@@ -194,10 +149,10 @@
                 <div class="skills" style="text-align: justify;" >         
                     <div class="container">
                         <br><br>
-                        <h6><strong>Technologies and Frameworks:</strong></h6> JAVA, C++, C#, HTML, CSS, JavaScript, ASP.Net, Python, jQuery, Rest API, JSON, XML, Bootstrap 4, Objective C, Swift 4, ADO.Net, Ruby on Rails <br><br>
+                        <h6><strong>Technologies and Frameworks:</strong></h6> JAVA, C++, C#, HTML, CSS, JavaScript, ASP.Net, Python, jQuery, Rest API, JSON, XML, Bootstrap 4, Objective C, Swift 4, ADO.Net, Ruby on Rails, Angular2/4/5, Node.js <br><br>
                         <h6><strong>Tools and IDEs:</strong></h6>Visual Studio 2015/2017, Brackets, Android Studio, Xcode 9.2, Eclipse IDE, Selenium Web driver, JIRA, Appium,<br><br>
                         <h6><strong>Version Control systems:</strong></h6> Git,TFS <br><br>
-                        <h6><strong>Relational Database Management Systems :</strong></h6> MSSQL Server, MySQL, Oracle Database, PostgreSQL, SQLite<br><br>
+                        <h6><strong>Relational Database Management Systems :</strong></h6> MSSQL Server, MySQL, Oracle Database, PostgreSQL, SQLite, NoSQL<br><br>
                         <br><br>
                     </div>
                     </div>
@@ -344,10 +299,65 @@
                 
                 <strong>Help on the Go -  Android application</strong><br>
                 <p style="text-align: justify;">Created an android application which used google maps API, Firebase by google and animations to enhance the look and feel. This application provided the details of the people who are willing to provide service during an emergency. User can call the person and view his location in the map. Based on the location, the user can decide whom to call. This application had two kinds of accounts; user account and service provider account who can view each other ont the application. The service provider is notified when the user requests for their assistance.</p><br>
+
+                 <strong>ChatBot -  Web Application</strong><br>
+                <p style="text-align: justify;">Created a responsive web application using Angular 5 and Dialogflow for developing intent based communication between user and chatbot. Configured this chatbot for small talk and understand the intent of the user through key words. </p><br>
                         
                         </div>                 
                 </div>         
         </div>
         </div>
+              
+                <script>  
+          
+            jQuery('html').bind('click', function(e) {
+               
+                if(jQuery(e.target).closest('.navbar').length == 0) {
+                    // click happened outside of .navbar, so hide
+                    var opened = jQuery('.navbar-collapse').hasClass('navbar-collapse');
+                    if ( opened === true ) {
+                        jQuery('.navbar-collapse').collapse('hide');
+                         console.log ('was clicked');
+                    }
+                }
+            });
+         
+         function deviceChangedFunction()
+         {
+            if(window.innerWidth <= 480)
+            {
+                document.getElementById("mobile-experience").scrollIntoView();
+                console.log('was clicked device');
+            }
+             else
+            {
+                document.getElementById("WExp").scrollIntoView();
+            }
+         }
+         
+         function deviceChangedFunctionEducation()
+         {
+             if(window.innerWidth <= 480) 
+                 {
+                    document.getElementById("mobile-education").scrollIntoView();
+                 }
+             else
+                 {
+                    
+                     document.getElementById("Edu").scrollIntoView();
+                 }
+         }
+         
+        $(document).on('click', 'a[href^="#"]', function (event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+              scrollTop: $($.attr(this, 'href')).offset().top
+             }, 500);
+        });
+         
+     </script>
+              
+              
     </body>
 </html>
